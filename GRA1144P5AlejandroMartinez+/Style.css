@@ -1,0 +1,170 @@
+@charset "utf-8";
+body {
+	margin: 0;
+	background-image: url("Linkin Link.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+wrapper {
+	width: 1366px;
+	margin: auto;
+	display: block;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.50);
+}
+main {
+	height: 820px;
+	background-size: cover;
+}
+.Home {
+	background-image: url(Linkin%20Park%20Background.webp);
+}
+.logo {
+	/* [disabled]margin-left: 660px; */
+	/* [disabled]margin-right: 660px; */
+	/* [disabled]margin-bottom: -85px; */
+	height: 100px;
+	/* [disabled]margin-top: -2px; */
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+}
+h1 {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: "New Rocker", system-ui;
+}
+
+header {
+	text-align: center;
+	font-family: "New Rocker", system-ui;
+}
+
+p{
+	text-align: center;
+	text-decoration: none;
+	color: rgba(255,255,255,1.00);
+	margin-left: 145px;
+	margin-right: 145px;
+	text-shadow: 0px 0px 5px rgba(0,0,0,1.00);
+	font-family: "New Rocker", system-ui;
+}
+
+h2 {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: "New Rocker", system-ui;
+}
+h3 {
+	text-align: center;
+	text-decoration: underline;
+	text-shadow: 0px 0px 5px rgba(255,255,255,1.00);
+	font-size: 25px;
+	font-family: "New Rocker", system-ui;
+}
+h4 {
+	text-decoration: underline;
+	color: rgba(255,255,255,1.00);
+	text-align: center;
+	font-family: "New Rocker", system-ui;
+}
+.Singer {
+	margin-left: 357px;
+	margin-top: 131px;
+}
+
+
+
+.video {
+	margin-left: 325px;
+	margin-top: 100px;
+}
+.Gallery {
+	background-image: url(Linkin%20Stage.webp);
+}
+
+.Show {
+	background-image: url(Rock%20Stage%20Background.jpg);
+}
+
+.tape {
+	margin-left: 365px;
+	margin-top: -4px;
+}
+.tour {
+	background-image: url(RoadTrip.jpg);
+}
+
+
+
+nav a li {
+	padding-top: 10px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	display: inline-block;
+	color: rgba(255,255,255,1.00);
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	background-image: url(url);
+}
+nav {
+	margin: auto;
+	/* [disabled]padding-top: 0px; */
+	/* [disabled]padding-bottom: 0px; */
+	background-color: rgba(0,0,0,1.00);
+	padding-right: 100px;
+	padding-left: 200px;
+}
+nav a li:hover {
+	color: rgba(255,255,255,1.00);
+	background-color: rgba(255,0,4,1.00);
+}
+.News {
+	background-image: url(Linkin%20Park%20News.webp);
+}
+.Merchandise {
+	background-image: url(Merch.jpg);
+}
+.Merch {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	margin-left: 20px;
+	padding-top: 72px;
+}
+
+.Privacy {
+	background-image: url(LinkinPark%20Privacy.webp);
+}
+.Music {
+	background-image: url(Performance.webp);
+}
+.Song {
+	margin-top: 330px;
+	margin-left: 365px;
+}
+.Blog {
+	background-image: url(Linkin%20Stance.webp);
+}
+.BlogOne {
+	margin-left: 215px;
+	margin-top: 175px;
+}
+.BlogTwo {
+}
+.BlogThree {
+}
+.Email {
+	background-image: url(Linkin%20email2.jpg);
+}
+.Band {
+	display: inline-block;
+	padding-right: 26px;
+	margin-top: 40px;
+	margin-left: 57px;
+
+}
