@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index.html</title>
+<style>
+body {
+	margin: 0;
+	background-color: rgba(158,162,78,1.00);
+	background-image: url(Peru.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+wrapper {
+	margin: auto;
+	width: 1200px;
+	display: block;
+	background-color: rgba(0,0,0,0.50);
+}
+header {
+	height: 100px;
+	background-color: #FFFFFF;
+}
+.plane {
+}
+.camera {
+}
+.hotel {
+}
+.car {
+}
+.ship {
+}
+#Tabs1 ul p {
+	text-align: center;
+	color: white;
+}
+#Tabs1 ul {
+	background-image: none;
+	border: none;
+	background-color: transparent;
+}
+#Tabs1 {
+	background-image: none;
+	border: none;
+	background-color: transparent;
+}
+#Tabs1 a {
+	background-color: transparent;
+	background-image: none;
+}
+#Tabs1 li {
+	background-image: none;
+	border-radius: 8px;
+	background-color: transparent;
+	border-width: thin;
+	border-style: solid;
+}
+#Tabs1 li:hover {
+	background-color: rgba(0,68,255,0.35);
+}
+.logo {
+	height: 145px;
+	width: auto;
+	margin-left: 30px;
+	margin-top: -20px;
+	/* [disabled]margin-bottom: -6px; */
+}
+input ,select{
+	margin: 8px;
+	padding: 8px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: thin solid #09f;
+	border-radius: 8px;
+}
+section {
+	width: 50%;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-right: -4px;
+}
+#Submit {
+	width: 200px;
+	background-color: #09F;
+	color: #FFF;
+	display: block;
+	margin-top: 22px;
+	margin-left: 480px;
+}
+footer {
+	color: rgba(255,255,255,1.00);
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<wrapper>
+  <header><img src="expedia.png" alt="" width="2048" height="2048" class="logo"></header>
+  <main>
+    <div id="Tabs1">
+      <ul>
+        <li><a href="#tabs-1" class="plane"><img src="Plane.png" alt="" width="100" height="80">
+          <p>Flights</p>
+        </a></li>
+        <li><a href="#tabs-2" class="camera"><img src="Camera.png" alt="" width="100" height="80">
+          <p>Things to do</p>
+        </a></li>
+        <li><a href="#tabs-3" class="hotel"><img src="Hotel.png" alt="" width="100" height="80">
+          <p>Hotels</p>
+        </a></li>
+        <li><a href="#tabs-4" class="car"><img src="Car.png" alt="" width="100" height="80">
+          <p>Cars</p>
+        </a></li>
+        <li><a href="#tabs-5" class="ship"><img src="Ship.png" alt="" width="100" height="80">
+          <p>Cruises</p>
+        </a></li>
+      </ul>
+      <div id="tabs-1"><input type="text" placeholder="Going To">
+        <section><input type="date" placeholder="Check in"></section>
+		<section><input type="date" placeholder="Check out"></section>
+		<select>
+		  <option value="0">Number of travelers</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		</select>
+		  <input name="Submit" type="submit" id="Submit">
+      </div>
+      <div id="tabs-2"><input type="text" placeholder="Tourist Spot"><input type="text" placeholder="Activities"><section><input type="date" placeholder="Check in"></section><section><input type="text" placeholder="More options to do"></section>
+		<input name="Submit" type="submit" id="Submit">
+		</div>
+      <div id="tabs-3"><input type="text" placeholder="Hotels in area"><section><input type="date" placeholder="Check in"></section>
+		<section><input type="date" placeholder="Check out"></section>
+		  <select>
+		  <option value="0">Number of Guests</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		</select>
+		  <input name="Submit" type="submit" id="Submit">
+	  </div>
+      <div id="tabs-4"><input type="text" placeholder="Cabin Select">
+		  <section><input type="text" placeholder="Pick-up Point"></section>
+		<section><input type="text" placeholder="Drop-off Point"></section>
+		  <section><input type="date" placeholder="Check in"></section>
+		<section><input type="date" placeholder="Check out"></section>
+		  <select>
+		  <option value="0">Number of travelers</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		</select>
+		  <input name="Submit" type="submit" id="Submit">
+		</div>
+      <div id="tabs-5"><input type="text" placeholder="Cabin Select">
+		  <section><input type="text" placeholder="Departure Point A"></section>
+		<section><input type="text" placeholder="Departure Point B"></section>
+		  <section><input type="date" placeholder="Check in"></section>
+		<section><input type="date" placeholder="Check out"></section>
+		  <select>
+		  <option value="0">Number of travelers</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		</select>
+		 <input name="Submit" type="submit" id="Submit">
+		</div>
+    </div>
+  </main>
+</wrapper>
+<footer><p>© 2025, Alejandro Martinez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
