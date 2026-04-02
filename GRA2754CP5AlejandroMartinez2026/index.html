@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 Drag-and-Drop | Alejandro Martinez 2026</title>
+	<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<style type="text/css">
+	
+	/* Color Theme Swatches in Hex */
+.Fermento-1-hex { background-color: #618EB8; }
+.Fermento-2-hex { background-color: #1062AC; }
+.Fermento-3-hex { background-color: #0098DB; }
+.Fermento-4-hex { background-color: #92D9F7; }
+.Fermento-5-hex { background-color: #F2F2F2; }
+
+body {
+    margin: 0;
+}
+wrapper {
+    width: 600px;
+    margin: auto;
+    display: block;
+}
+#face {
+    height: 600px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-image: url(Base%20head.png);
+    background-position: 50% 30%;
+    background-size: 700px auto;
+    background-repeat: no-repeat;
+}
+div {
+    border: thin solid black;
+}
+section {
+    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+	gap: 10px;
+}
+header {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 5px 7px #0077F7;
+    text-indent: 0px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+	div img{
+		width: 100%;
+		height: auto;
+	}
+}
+</style>
+</head>
+
+<body class="Fermento-1-hex">
+<wrapper class="Fermento-4-hex">
+  <header>Customize a Face</header>
+  <main>
+    <div id="face" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="face2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <section>
+      <div id="hair1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Hair1.png" alt="" width="88" height="31" id="drag1" draggable="true" ondragstart="drag(event)"></div>
+      <div id="hair2" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Hair2.png" alt="" width="88" height="31" id="drag2" draggable="true" ondragstart="drag(event)"></div>
+      <div id="hair3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Hair3.png" alt="" width="88" height="31" id="drag3" draggable="true" ondragstart="drag(event)"></div>
+      <div id="eyes1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Eyes1.png" alt="" width="88" height="31" id="drag4" draggable="true" ondragstart="drag(event)"></div>
+      <div id="eyes2" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Eyes2.png" alt="" width="88" height="31" id="drag5" draggable="true" ondragstart="drag(event)"></div>
+      <div id="eyes3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Eyes3.png" alt="" width="88" height="31" id="drag6" draggable="true" ondragstart="drag(event)"></div>
+      <div id="mouth1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Mouth1.png" alt="" width="88" height="31" id="drag7" draggable="true" ondragstart="drag(event)"></div>
+      <div id="mouth2" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Mouth2.png" alt="" width="88" height="31" id="drag8" draggable="true" ondragstart="drag(event)"></div>
+      <div id="mouth3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Mouth3.png" alt="" width="88" height="31" id="drag9" draggable="true" ondragstart="drag(event)"></div>
+     
+    </section>
+  </main>
+  <footer>© 2026, Alejandro Martinez,
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+</body>
+</html>
